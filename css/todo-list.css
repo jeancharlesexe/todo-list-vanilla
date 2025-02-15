@@ -122,13 +122,19 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%); 
+                font-weight: bolder;
+                font-size: 11px;
+            }
+
+            .progress-content{
+                height: 100%;
+                width: 20%;
+                background-color: rgb(44, 148, 44);
+                border-radius: 23px 0 0 23px;
+                transition: width 0.3s ease-in-out; /* adicione a transição */
             }
         }
         
-        .progress-bar span{
-            font-weight: bolder;
-            font-size: 11px;
-        }
         
         #btn-hide{
             height: 25px;
