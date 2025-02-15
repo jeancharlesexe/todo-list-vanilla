@@ -2,6 +2,8 @@
 
 A simple and efficient web application for managing your daily tasks.
 
+![Screenshot](./images/default.png)
+
 ## Features
 
 - Add new tasks
@@ -15,16 +17,16 @@ A simple and efficient web application for managing your daily tasks.
 ## Demonstration
 
 ### Adding a new task
-![Adding task](./images/add-task.gif)
+![Adding task](./images/add-task.png)
 
 ### Editing a task
-![Editing task](./images/edit-task.gif)
+![Editing task](./images/edit-task.png)
 
 ### Deleting a task
-![Deleting task](./images/delete-task.gif)
+![Deleting task](./images/delete-task.png)
 
 ### Marking a task as completed
-![Marking task](./images/complete-task.gif)
+![Marking task](./images/complete-task.png)
 
 ## Technologies Used
 
@@ -65,6 +67,6 @@ todo-list-vanilla/
     └── complete-task.png
 ```
 
-##Contact
-Jean Charles - @jeancharlesexe | jean.albuquerque@sptech.school
-Project URL: https://github.com/jeancharlesexe/todo-list-vanilla
+## Contact
+- Jean Charles: jean.albuquerque@sptech.school
+- Project URL: https://github.com/jeancharlesexe/todo-list-vanilla
