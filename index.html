@@ -13,52 +13,24 @@
             <h1 >Lista de Tarefas</h1>
         </header>
         <section class="form-container">
-            <form action="#" class="form-task">
-                <input type="task" id="input_task" placeholder="Digite a descrição da tarefa..." required>
-                <button type="submit" id="btn_add">+</button>
+            <form action="#" id="form-task" class="form-task">
+                <input type="task" id="input-task" placeholder="Digite a descrição da tarefa..." required>
+                <button type="submit" id="btn-add">+</button>
             </form>
         </section>
         <section class="task-container">
-            <ul class="task-list">
-                <li class="task-item">
-                    <div class="task-info">
-                        <input type="checkbox" id="task_1">
-                        <label for="task_1">alongar</label>
-                    </div>
-                    <div class="task-settings">
-                        <button class="btn_edit">
-                            <img src="https://img.icons8.com/?size=30&id=AWPFmbr0eZkC&format=png&color=000000" alt="Editar">
-                        </button>
-                        <button class="btn_delete">
-                            <img src="https://img.icons8.com/?size=30&id=exEuV0xMCMYC&format=png&color=000000"  alt="Excluir">
-                        </button>
-                    </div>
-                </li>
-                <li class="task-item">
-                    <div class="task-info">
-                        <input type="checkbox" id="task_1">
-                        <label for="task_1">tomar café da manhã</label>
-                    </div>
-                    <div class="task-settings">
-                        <button class="btn_edit">
-                            <img src="https://img.icons8.com/?size=30&id=AWPFmbr0eZkC&format=png&color=000000" alt="Editar">
-                        </button>
-                        <button class="btn_delete">
-                            <img src="https://img.icons8.com/?size=30&id=exEuV0xMCMYC&format=png&color=000000"  alt="Excluir">
-                        </button>
-                    </div>
-                </li>
+            <ul id="task-list" class="task-list">
             </ul>
         </section>
         <footer class="bar-container">
             <div class="progress-bar">
                 <div></div>
-                <span>0/0 concluídos (0.0%)</span>
+                <span id="progress-info">0/0 concluídos (0.0%)</span>
             </div>
-            <button id="btn_hide">Ocultar concluídas</button>
+            <button id="btn-hide">Ocultar concluídas</button>
         </footer>
     </main>
 
-    <script src=""></script>
+    <script src="./js/main.js" defer></script>
 </body>
 </html>
