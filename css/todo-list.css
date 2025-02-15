@@ -128,7 +128,7 @@
 
             .progress-content{
                 height: 100%;
-                width: 20%;
+                width: 0;
                 background-color: rgb(44, 148, 44);
                 border-radius: 23px 0 0 23px;
                 transition: width 0.3s ease-in-out; /* adicione a transição */
