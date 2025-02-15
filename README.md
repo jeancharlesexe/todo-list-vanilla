@@ -1,4 +1,4 @@
-# Task Manager
+# Todo-list Vanilla JS
 
 A simple and efficient web application for managing your daily tasks.
 
