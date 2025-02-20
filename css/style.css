@@ -1,157 +1,152 @@
 /* box container */
-.main{
-    width: 60vw;
-    background-color: rgb(255, 255, 255);
-    padding: 40px 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.075);
-    
-    .form-task{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        #input-task{
-            flex: 1;
-            height: 35px;
-            padding-left: 10px;
-            border: 1px solid rgb(165, 165, 165);
-
-            &:focus{
-                outline: none;
-                border-color: rgb(0, 153, 255);
-            }
-        }
-
-        #btn-add{
-            width: 35px;
-            height: 35px;
-            background-color: rgb(0, 153, 255);
-            border: none;
-            border-color: rgb(104, 104, 104);
-            color: #FFF;
-            cursor: pointer;
-            transition: all 0.3s;
-
-            &:hover{
-                background-color: rgb(0, 138, 230);
-            }
-        }
-    }
-
-    .task-container{
-        height: auto;
-        width: 100%;
-        
-        .task-list{
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-            gap: 8px;
-
-            .task-item{
-                height: 53px;
-                width: 100%;
-                border: 1px solid rgb(165, 165, 165);
-                border-radius: 5px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                .task-info{
-                    margin-left: 10px;
-
-                    input{
-                        cursor: pointer;
-                    }
-                }
-                
-                .task-settings{
-                    display: flex;
-                    margin-right: 10px;
-                    gap: 20px;
-
-                    button{
-                        border: none;
-                        height: 50px;
-                        width: 70px;
-                        background-color: transparent;
-                        cursor: pointer;
-                        transition: all 0.3s;
-                        
-                        &:hover{
-                            background-color: rgb(240, 240, 240);
-                        }
-                    }
-
-                }
-            }
-
-            .task-done{
-                opacity: 50%;
-
-                label{
-                    text-decoration: line-through;
-                }
-            }
-        }
-    }
-
-    .bar-container{
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        height: 50px;
-        padding: 0 10px;
-        background-color: rgb(240, 240, 240);
-        border-radius: 5px;
-
-        .progress-bar{
-            flex: 1;
-            height: 23px;
-            background-color: rgb(214, 214, 214);
-            border-radius: 23px;
-            position: relative;
-
-            span{
-                position: absolute;
-                z-index: 1;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%); 
-                font-weight: bolder;
-                font-size: 11px;
-            }
-
-            .progress-content{
-                height: 100%;
-                width: 0;
-                background-color: rgb(44, 148, 44);
-                border-radius: 23px 0 0 23px;
-                transition: width 0.3s ease-in-out; /* adicione a transição */
-            }
-        }
-        
-        
-        #btn-hide{
-            height: 25px;
-            border-radius: 3px;
-            padding: 0 8px;
-            background-color: rgb(0, 153, 255);
-            color: #FFF;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s;
-
-            &:hover{
-                background-color: rgb(0, 138, 230);
-            }
-        }
-        
-
-    }
+.main {
+	width: 60vw;
+	background-color: rgb(255, 255, 255);
+	padding: 40px 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.075);
 }
 
+.main .form-task {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.main .form-task #input-task {
+	flex: 1;
+	height: 35px;
+	padding-left: 10px;
+	border: 1px solid rgb(165, 165, 165);
+}
+
+.main .form-task #input-task:focus {
+	outline: none;
+	border-color: rgb(0, 153, 255);
+}
+
+.main .form-task #btn-add {
+	width: 35px;
+	height: 35px;
+	background-color: rgb(0, 153, 255);
+	border: none;
+	border-color: rgb(104, 104, 104);
+	color: #FFF;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.main .form-task #btn-add:hover {
+	background-color: rgb(0, 138, 230);
+}
+
+.main .task-container {
+	height: auto;
+	width: 100%;
+}
+
+.main .task-container .task-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	gap: 8px;
+}
+
+.main .task-container .task-list .task-item {
+	height: 53px;
+	width: 100%;
+	border: 1px solid rgb(165, 165, 165);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main .task-container .task-list .task-item .task-info {
+	margin-left: 10px;
+}
+
+.main .task-container .task-list .task-item .task-info input {
+	cursor: pointer;
+}
+
+.main .task-container .task-list .task-item .task-settings {
+	display: flex;
+	margin-right: 10px;
+	gap: 20px;
+}
+
+.main .task-container .task-list .task-item .task-settings button {
+	border: none;
+	height: 50px;
+	width: 70px;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.main .task-container .task-list .task-item .task-settings button:hover {
+	background-color: rgb(240, 240, 240);
+}
+
+.main .task-container .task-list .task-done {
+	opacity: 50%;
+}
+
+.main .task-container .task-list .task-done label {
+	text-decoration: line-through;
+}
+
+.main .bar-container {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	height: 50px;
+	padding: 0 10px;
+	background-color: rgb(240, 240, 240);
+	border-radius: 5px;
+}
+
+.main .bar-container .progress-bar {
+	flex: 1;
+	height: 23px;
+	background-color: rgb(214, 214, 214);
+	border-radius: 23px;
+	position: relative;
+}
+
+.main .bar-container .progress-bar span {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: bolder;
+	font-size: 11px;
+}
+
+.main .bar-container .progress-bar .progress-content {
+	height: 100%;
+	width: 0;
+	background-color: rgb(44, 148, 44);
+	border-radius: 23px 0 0 23px;
+	transition: width 0.3s ease-in-out;
+}
+
+.main .bar-container #btn-hide {
+	height: 25px;
+	border-radius: 3px;
+	padding: 0 8px;
+	background-color: rgb(0, 153, 255);
+	color: #FFF;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.main .bar-container #btn-hide:hover {
+	background-color: rgb(0, 138, 230);
+}
